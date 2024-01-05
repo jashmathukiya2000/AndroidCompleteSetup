@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DemoAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DemoAndroid" parent="Base.Theme.DemoAndroid" />
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#00afba</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">#00afba</item>
+    </style>
+
+    <style name="FiledColorButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundColor">#00afba</item>
+    </style>
+
+    <style name="Theme.DemoAndroid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DemoAndroid.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DemoAndroid.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

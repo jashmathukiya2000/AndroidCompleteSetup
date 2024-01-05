@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Unfilled state -->
+    <item android:state_selected="false" android:state_focused="false">
+        <shape>
+            <solid android:color="#00FFFFFF" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#272727" />
+        </shape>
+    </item>
+
+    <!-- Filled state -->
+    <item android:state_selected="true" android:state_focused="false">
+        <shape>
+            <solid android:color="#00FFFFFF" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#00afba" />
+        </shape>
+    </item>
+
+    <!-- Focused state (when user is typing) -->
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="#00FFFFFF" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#00afba" />
+        </shape>
+    </item>
+</selector>

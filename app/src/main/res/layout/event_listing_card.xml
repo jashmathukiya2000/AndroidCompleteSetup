@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="#A9000000"
+    app:cardCornerRadius="10dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="5dp">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="2dp"
+            android:layout_height="90dp"
+            android:background="#E4E4E4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.17"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:background="#E4E4E4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_regular"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/view5"
+                app:layout_constraintStart_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="@+id/view5">
+
+                <TextView
+                    android:id="@+id/start_date_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/viga"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="DEC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="#E4E4E4" />
+
+                <TextView
+                    android:id="@+id/start_date_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/viga"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="12dp"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="15dp"
+                android:layout_height="2dp"
+                android:background="#E4E4E4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_regular"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/view6"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="@+id/view6">
+
+                <TextView
+                    android:id="@+id/end_date_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/viga"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="DEC"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="#E4E4E4" />
+
+                <TextView
+                    android:id="@+id/end_date_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/viga"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="12dp"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/viga"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:text="Collateral Edge - Achievement"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout5" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginTop="8dp"
+            android:background="#E4E4E4"
+            app:layout_constraintEnd_toEndOf="@+id/event_title"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_type" />
+
+        <TextView
+            android:id="@+id/event_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/viga"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="1dp"
+            android:text="Gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_title" />
+
+        <TextView
+            android:id="@+id/duration_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/viga"
+            android:text="Duration of event: 10ms"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="8dp"
+            android:background="#E4E4E4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/duration_text"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/priority_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/priority_rank"
+            app:layout_constraintStart_toEndOf="@+id/view4"
+            app:layout_constraintTop_toTopOf="@+id/priority_rank"
+            app:srcCompat="@drawable/arrow_up_24" />
+
+        <TextView
+            android:id="@+id/priority_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/viga"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/priority_icon"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
